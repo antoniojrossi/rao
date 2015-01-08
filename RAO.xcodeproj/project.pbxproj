@@ -10,6 +10,7 @@
 		F047C2601A5DDDBD001D7173 /* RAO.h in Headers */ = {isa = PBXBuildFile; fileRef = F047C25F1A5DDDBD001D7173 /* RAO.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F047C2661A5DDDBD001D7173 /* RAO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F047C25A1A5DDDBD001D7173 /* RAO.framework */; };
 		F047C26D1A5DDDBD001D7173 /* RAOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F047C26C1A5DDDBD001D7173 /* RAOTests.swift */; };
+		F047C27C1A5DDF62001D7173 /* RAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F047C27B1A5DDF62001D7173 /* RAO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		F047C2651A5DDDBD001D7173 /* RAOTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RAOTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F047C26B1A5DDDBD001D7173 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F047C26C1A5DDDBD001D7173 /* RAOTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RAOTests.swift; sourceTree = "<group>"; };
+		F047C27B1A5DDF62001D7173 /* RAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RAO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				F047C25F1A5DDDBD001D7173 /* RAO.h */,
 				F047C25D1A5DDDBD001D7173 /* Supporting Files */,
+				F047C27B1A5DDF62001D7173 /* RAO.swift */,
 			);
 			path = RAO;
 			sourceTree = "<group>";
@@ -209,6 +212,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F047C27C1A5DDF62001D7173 /* RAO.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,6 +319,7 @@
 		F047C2711A5DDDBD001D7173 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -326,12 +331,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		F047C2721A5DDDBD001D7173 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
